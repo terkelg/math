@@ -409,6 +409,6 @@ function gravitate(partA, partB) {
 ```
 
 # Resources
-- [Coding Math](https://www.youtube.com/channel/UCF6F8LdCSWlRwQm_hfA2bcQ)
+- [Coding Math](https://www.youtube.com/channel/UCF6F8LdCSWlRwQm_hfA2bcQ) ([Github](https://github.com/bit101/codingmath))
 - [Generative Art by Matt Pearson](https://www.manning.com/books/generative-art)
 
