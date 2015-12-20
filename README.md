@@ -1,6 +1,10 @@
 #Learning Math
 Math snippets for graphic programming.
-This is work in progress!
+
+This is work in progress.
+To-do:
+- Clean up, convert all to JS
+- Link to example code
 
 ##Contents
 
