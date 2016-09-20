@@ -9,7 +9,7 @@ This is work in progress.
 - Add GIFs to explan
 
 ## Contents
- - [Snippets]()
+ - [Snippets](https://github.com/terkelg/math/blob/master/README.md#snippets)
 	- [Radias & Degrees](https://github.com/terkelg/math#radians--degrees)
 	- [Calculate side lengths](https://github.com/terkelg/math#calculate-side-lengths)
 	- [Rotate a 2D point](https://github.com/terkelg/math#rotate-a-2d-point)
@@ -18,7 +18,7 @@ This is work in progress.
 	- [Length of a vector (Magnitude)](https://github.com/terkelg/math#length-of-a-vector)
 	- [Add and substract vectors](https://github.com/terkelg/math#add-and-substract-vectors)
 	- [Normalize vector](https://github.com/terkelg/math#normalize-vector)
-	- [Dot product vectors]([https://github.com/terkelg/math#dot-product-vectors)
+	- [Dot product vectors](https://github.com/terkelg/math#dot-product-vectors)
 	- [Finding angle between 2 points](https://github.com/terkelg/math#finding-angle-between-2-points)
 	- [Finding angle between 2 vectors](https://github.com/terkelg/math#finding-angle-between-2-vectors)
 	- [Cross Product](https://github.com/terkelg/math#cross-product)
