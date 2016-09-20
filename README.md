@@ -1,4 +1,4 @@
-# Learning Math
+# Math Snippets
 > Math snippets with graphic programming in mind.
 
 This is work in progress.
