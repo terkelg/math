@@ -1,14 +1,60 @@
-#Learning Math
-Math snippets for graphic programming.
+# Learning Math
+> Math snippets with graphic programming in mind.
 
 This is work in progress.
-To-do:
-- Clean up, convert all to JS
-- Link to example code
+**To-do:**
+- Convert all snippets to JS (Some are Action Script)
+- Add live code examples
+- Add simple desciptions and explain a little more
+- Add GIFs to explan
 
-##Contents
+## Contents
+ - [Snippets]()
+	- [Radias & Degrees](https://github.com/terkelg/math#radians--degrees)
+	- [Calculate side lengths](https://github.com/terkelg/math#calculate-side-lengths)
+	- [Rotate a 2D point](https://github.com/terkelg/math#rotate-a-2d-point)
+	- [Linear distance bwetween 2 points](https://github.com/terkelg/math#linear-distance-2-points)
+	- [Linear distance between 2 vectors](https://github.com/terkelg/math#linear-distance-between-2-vectors)
+	- [Length of a vector (Magnitude)](https://github.com/terkelg/math#length-of-a-vector)
+	- [Add and substract vectors](https://github.com/terkelg/math#add-and-substract-vectors)
+	- [Normalize vector](https://github.com/terkelg/math#normalize-vector)
+	- [Dot product vectors]([https://github.com/terkelg/math#dot-product-vectors)
+	- [Finding angle between 2 points](https://github.com/terkelg/math#finding-angle-between-2-points)
+	- [Finding angle between 2 vectors](https://github.com/terkelg/math#finding-angle-between-2-vectors)
+	- [Cross Product](https://github.com/terkelg/math#cross-product)
+	- [Rotate to the mouse (or any point)](https://github.com/terkelg/math#rotate-to-the-mouse-or-any-point)
+	- [Create waves](https://github.com/terkelg/math#create-waves)
+	- [Hex to decimal](https://github.com/terkelg/math#hex-to-decimal)
+	- [Decimal to hex](https://github.com/terkelg/math#decimal-to-hex)
+	- [Combine component colors](https://github.com/terkelg/math#combine-component-colors)
+	- [Extract component colors](https://github.com/terkelg/math#extract-component-colors)
+	- [Draw a curve through a point](https://github.com/terkelg/math#draw-a-curve-through-a-point)
+	- [Convert angular velocity to x, y velocity](https://github.com/terkelg/math#convert-angular-velocity-to-x-y-velocity)
+	- [Convert angular acceleration or any other force to x and y](https://github.com/terkelg/math#convert-angular-acceleration-or-any-other-force-to-x-and-y)
+	- [Add acceleration to velocity](https://github.com/terkelg/math#add-acceleration-to-velocity)
+	- [Add velocity to position](https://github.com/terkelg/math#add-velocity-to-position)
+	- [Testing for out of bound](https://github.com/terkelg/math#testing-for-out-of-bound)
+	- [Apply friction (correct way)](https://github.com/terkelg/math#apply-friction-correct-way)
+	- [Apply friction (the easy way)](https://github.com/terkelg/math#apply-friction-the-easy-way)
+	- [Simple easing, long form](https://github.com/terkelg/math#simple-easing-long-form)
+	- [Simple easing, abbreviated form](https://github.com/terkelg/math#simple-easing-abbreviated-form)
+	- [Simple easing, short form](https://github.com/terkelg/math#simple-easing-short-form)
+	- [Simple spring, long form](https://github.com/terkelg/math#simple-spring-long-form)
+	- [Simple spring, abbreviated form](https://github.com/terkelg/math#simple-spring-abbreviated-form)
+	- [Simple spring, short form](https://github.com/terkelg/math#simple-spring-short-form)
+	- [Offset spring](https://github.com/terkelg/math#offset-spring)
+	- [Distance-based collision detection](https://github.com/terkelg/math#distance-based-collision-detection)
+	- [Multiple-objects collision detection](https://github.com/terkelg/math#multiple-objects-collision-detection)
+	- [Coordinate rotation](https://github.com/terkelg/math#coordinate-rotation)
+	- [Reverse coordiante rotation](https://github.com/terkelg/math#reverse-coordiante-rotation)
+	- [Conservation of momentum in ActionScript (with a shortcut)](https://github.com/terkelg/math#conservation-of-momentum-in-actionscript-with-a-shortcut)
+	- [Gravity implementation](https://github.com/terkelg/math#gravity-implementation)
+ - [Resources](https://github.com/terkelg/math#resources)
 
-## Radians & Degrees
+
+## Snippets
+
+### Radians & Degrees
 
 ```
 radians = degrees * Math.PI / 180;
@@ -22,10 +68,10 @@ var radians = angleInDegrees * Math.PI / 180;
 var backToDegrees = radians * 180 / Math.PI;
 ```
 
-## Calculate side lengths
-### SOHCAHTOA
+### Calculate side lengths
+#### SOHCAHTOA
 
-##### Calculate basic trigonometric functions
+###### Calculate basic trigonometric functions
 ```
 Sine of an angle = opposite / hypotenuse
 Cosine of an angle = adjacent / hypotenuse
@@ -43,7 +89,7 @@ var adjacent = Math.cos( angleRadians ) * hyp;
 var tangent  = opposite / adjacent;
 ```
 
-## Rotate a 2D point
+### Rotate a 2D point
 ```js
 var vec2 = {x: 2, y: 3};
 var rotatedVector = rotate2D(vec2, angle);
@@ -63,7 +109,7 @@ function rotate2D(vector, angle)
 
 ```
 
-## Linear Distance 2 points
+### Linear distance between 2 points
 ```
 dx = x2 - x1;
 dy = y2 - y1;
@@ -77,8 +123,8 @@ var x2 = 5;
 var distance = x2 — x1;
 ```
 
-## Linear distance between 2 vectors
-### a² + b² = c²
+### Linear distance between 2 vectors
+#### a² + b² = c²
 
 ```js
 // Javascript
@@ -88,8 +134,8 @@ var v2 = {x: 5, y: 15};
 var distance = Math.sqrt( Math.pow((v2.x — v1.x), 2) + Math.pow((v2.y — v1.y), 2) );
 ```
 
-## Length of a vector
-### a.k.a Magnitude 
+### Length of a vector
+#### Magnitude 
 
 ```js
 // Javascript
@@ -102,7 +148,7 @@ var v = {x: 4, y:-9, z: 0.5};
 var length = Math.sqrt( (Math.pow(v.x, 2) + Math.pow(v.y, 2) + Math.pow(v.z, 2) ));
 ```
 
-## Add and substract vectors
+### Add and substract vectors
 
 ```js
 var v1 = {x: 2, y: 3};
@@ -111,7 +157,7 @@ var addedVec = {x: v1.x + v2.x, y: v1.y + v2.y};
 var subVec = {x: v1.x - v2.x, y: v1.y - v2.y};
 ```
 
-## Normalize vector
+### Normalize vector
 
 ```js
 // Javascript
@@ -126,7 +172,7 @@ var length = Math.sqrt( Math.pow(v.x, 2) + Math.pow(v.y,2) + Math.pow(v.z,2) );
 var n = {x: v.x / length, y: v.y / length, z: v.z / length};
 ```
 
-## Dot product vectors
+### Dot product vectors
 
 ```js
 // Javascript
@@ -135,7 +181,7 @@ var v2 = {x: 5, y: 9, z: -5};
 var dot = (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z);
 ```
 
-## Finding angle between 2 points
+### Finding angle between 2 points
 
 ```js
 //Javascript
@@ -145,7 +191,7 @@ var radians = Math.atan2(x, y);
 var degrees = radians * 180 / Math.PI;
 ```
 
-## Finding angle between 2 vectors
+### Finding angle between 2 vectors
 
 ```js
 // Javascript
@@ -160,7 +206,7 @@ var radians = Math.acos(dot / (lengthv1 * lengthv2));
 var angle = radians * 180 / Math.PI;
 ```
 
-## Cross Product
+### Cross Product
 
 ```js
 // Javascript
@@ -173,14 +219,14 @@ var cross = {
 };
 ```
 
-## Rotate to the mouse (or any point)
+### Rotate to the mouse (or any point)
 ```js
 var dx = mouseX - spriteX;
 var dy = mouseY - spriteY;
 sprite.rotation = Math.atan2(dy, dx) * 180 / Math.PI;
 ```
 
-## Create waves
+### Create waves
 ```js
 // value can be properties like x, y, alpha, rotation etc.
 public function onEnterFrame(event:Event) {
@@ -189,23 +235,23 @@ public function onEnterFrame(event:Event) {
 }
 ```
 
-## Hex to decimal
+### Hex to decimal
 ```
 trace(hexValue);
 ```
 
-## Decimal to hex
+### Decimal to hex
 ```
 trace(decimalValue.toString(16));
 ```
 
-## Combine component colors
+### Combine component colors
 ```
 color24 = red << 16 | green << 8 | blue;
 color32 = alpha << 24 | red << 16 | green << 8 | blue;
 ```
 
-## Extract component colors
+### Extract component colors
 ```
 red = color24 >> 16;
 green = color24 >> 8 & 0xFF;
@@ -217,7 +263,7 @@ green = color24 >> 8 & 0xFF;
 blue = color24 & 0xFF;
 ```
 
-## Draw a curve through a point
+### Draw a curve through a point
 ```
 //xt, yt is the point to draw through
 // x0, y0, x2, y2 is the end points
@@ -227,31 +273,31 @@ moveTo(x0, y0);
 curveTo(x1, y1, x2, y2);
 ```
 
-## Convert angular velocity to x, y velocity
+### Convert angular velocity to x, y velocity
 ```
 vx = Math.cos(angle) * speed;
 vy = Math.sin(angle) * speed;
 ```
 
-## Convert angular acceleration or any other force to x and y
+### Convert angular acceleration or any other force to x and y
 ```
 ax = Math.cos(angle) * force;
 ay = Math.sin(angle) * force;
 ```
 
-## Add acceleration to velocity
+### Add acceleration to velocity
 ```
 vx += ax;
 vy += ay;
 ```
 
-## Add velocity to position
+### Add velocity to position
 ```
 sprite.x += vx;
 sprite.y += vy;
 ```
 
-## Testing for out of bound
+### Testing for out of bound
 ```
 if(sprite.x - sprite.width / 2 > right) ||
   sprite.x - sprite.width / 2 < left ||
@@ -262,7 +308,7 @@ if(sprite.x - sprite.width / 2 > right) ||
 }
 ```
 
-## Apply friction (correct way)
+### Apply friction (correct way)
 ```
 speed = Math.sqrt(vx*vx + vy*vy);
 angle = Math.atan2(vy, vx);
@@ -276,13 +322,13 @@ vx = Math.cos(angle) * speed;
 vy = Math.sin(angle) * speed;
 ```
 
-## Apply friction (the easy way)
+### Apply friction (the easy way)
 ```
 vx *= friction;
 vy *= friction;
 ```
 
-## Simple easing, long form
+### Simple easing, long form
 ```
 var dx = targetX - sprite.x;
 var dy = targetY - sprite.y;
@@ -292,7 +338,7 @@ sprite.x += vx;
 sprite.y += vy;
 ```
 
-## Simple easing, abbreviated form
+### Simple easing, abbreviated form
 ```
 vx = (targetX - sprite.x) * easing;
 vy = (targetY - sprite.y) * easing;
@@ -300,13 +346,13 @@ sprite.x += vx;
 sprite.y += vy;
 ```
 
-## Simple easing, short form
+### Simple easing, short form
 ```
 sprite.x += (targetX - sprite.x) * easing;
 sprite.y += (targetY - sprite.y) * easing;
 ```
 
-## Simple spring, long form
+### Simple spring, long form
 ```
 var ax = (targetX - sprite.x) * spring;
 var ay = (targetY - sprite.y) * spring;
@@ -318,7 +364,7 @@ sprite.x += vx;
 sprite.y += vy;
 ```
 
-## Simple spring, abbreviated form
+### Simple spring, abbreviated form
 ```
 vx = (targetX - sprite.x) * spring;
 vy = (targetY - sprite.y) * spring;
@@ -328,7 +374,7 @@ sprite.x += vx;
 sprite.y += vy;
 ```
 
-## Simple spring, short form
+### Simple spring, short form
 ```
 vx = (targetX - sprite.x) * spring;
 vy = (targetY - sprite.y) * spring;
@@ -336,7 +382,7 @@ sprite.x += (vx *= friction);
 sprite.y += (vy *= friction);
 ```
 
-## Offset spring
+### Offset spring
 ```
 var dx = sprite.x - fixedX;
 var dy = sprite.y - fixedY;
@@ -346,7 +392,7 @@ var targetY = fixedY + Math.sin(angle) * springLength;
 // Spring to targetX and targetY;
 ```
 
-## Distance-based collision detection
+### Distance-based collision detection
 ```
 // Starting with spriteA and spriteB
 // If using a plain sprite, or obejct without a radius property
@@ -361,7 +407,7 @@ if(dist < spriteA.radius + spriteB.radius)
 }
 ```
 
-## Multiple-objects collision detection
+### Multiple-objects collision detection
 ```
 var numObjects = 10;
 for (var i = 0; i < numObjects; i++)
@@ -376,26 +422,26 @@ for (var i = 0; i < numObjects; i++)
 }
 ```
 
-## Coordinate rotation
+### Coordinate rotation
 ```
 x1 = Math.cos(angle) * x - Math.sin(angle) * y;
 y1 = Math.cos(angle) * y + Math.sin(angle) * x;
 ```
 
-## Reverse coordiante rotation
+### Reverse coordiante rotation
 ```
 x1 = Math.cos(angle) * x + Math.sin(angle) * y;
 y1 = Math.cos(angle) * y - Math.sin(angle) * x;
 ```
 
-## Conservation of momentum in ActionScript (with a shortcut)
+### Conservation of momentum in ActionScript (with a shortcut)
 ```js
 var vxTotal = vx0 - vx1;
 vx0 = ((ball0.mass - ball1.mass) * vx0 + 2 * ball1.mass * vx1) / (ball0.mass + ball1.mass);
 vx1 = vxTotal + vx0;
 ```
 
-## Gravity implementation
+### Gravity implementation
 ```js
 function gravitate(partA, partB) {
   var dx = partB.x - partA.x;
@@ -412,8 +458,10 @@ function gravitate(partA, partB) {
 }
 ```
 
+
 # Resources
 - [Coding Math](https://www.youtube.com/channel/UCF6F8LdCSWlRwQm_hfA2bcQ) ([Github](https://github.com/bit101/codingmath))
 - [Generative Art by Matt Pearson](https://www.manning.com/books/generative-art)
 - [Math as code](https://github.com/Jam3/math-as-code)
 - [BetterExplained.com](http://betterexplained.com/)
+- [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc)
