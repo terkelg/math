@@ -3,10 +3,10 @@
 
 This is work in progress.
 **To-do:**
-- Convert all snippets to JS (Some are Action Script)
-- Add live code examples
-- Add simple desciptions and explain a little more
-- Add GIFs to explan
+- [ ] Convert all snippets to JS (Some are Action Script)
+- [ ] Add live code examples
+- [ ] Add simple desciptions and explain a little more
+- [ ] Add GIFs to explan
 
 ## Contents
  - [Snippets](https://github.com/terkelg/math/blob/master/README.md#snippets)
