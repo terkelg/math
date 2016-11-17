@@ -5,8 +5,7 @@ This is work in progress.
 **To-do:**
 - [ ] Convert all snippets to JS (Some are Action Script)
 - [ ] Add live code examples
-- [ ] Add simple desciptions and explain a little more
-- [ ] Add GIFs to explan
+- [ ] Add simple desciptions
 
 ## Contents
  - [Snippets](https://github.com/terkelg/math/blob/master/README.md#snippets)
