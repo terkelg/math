@@ -186,7 +186,7 @@ var dot = (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z);
 //Javascript
 var x = -3;
 var y = -2;
-var radians = Math.atan2(x, y);
+var radians = Math.atan2(y, x);
 var degrees = radians * 180 / Math.PI;
 ```
 
